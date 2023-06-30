@@ -41,6 +41,7 @@ public class Login {
 	public void clickLoginButton()
 	{
 		 PageUtility.clickonElement(loginButton);
+		 WaitUtility.waitForElementClickable(driver, loginButton);
 	}
 	public String getAlertMessage()
 	{

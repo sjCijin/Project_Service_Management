@@ -15,6 +15,7 @@ import utilities.WaitUtility;
 
 public class HomePage {
 	public WebDriver driver;
+	PageUtility page = new PageUtility();
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -41,67 +42,49 @@ public class HomePage {
 	WebElement sendEmail;
 	@FindBy(xpath = "//h5[text()='Send Email']")
 	WebElement sendEmailMsg;
-//	@FindBy(xpath = "//i[@class='fa fa-exclamation-triangle']")
-//	WebElement QAlertsIcon;
-//	@FindBy(xpath = "//span[@class='label label-danger pull-right']")
-//	WebElement QAlertsIconNum;
-//	@FindBy(xpath = "//h1[text()='Quantity Alerts']")
-//	WebElement QMsg;
-//	@FindBy(xpath = "//label[text()='Client Name']")
-//	WebElement clientLabel;
-//	@FindBy(xpath = "//label[text()='IMEI']")
-//	WebElement label;
+	@FindBy(xpath = "//i[@class='fa fa-exclamation-triangle']")
+	WebElement QAlertsIcon;
+	@FindBy(xpath = "//span[@class='label label-danger pull-right']")
+	WebElement QAlertsIconNum;
 
+	@SuppressWarnings("static-access")
 	public void verifyNavigatetoClientPage() throws IOException {
-		PageUtility.clickonElement(addIcon);
-	//	WaitUtility.presenceOfElementLocated(driver, By.xpath("//i[@class='fa fa-plus-circle']"));
-		PageUtility.clickonElement(addClient);
-		// String expectedMessage=ExcelUtility.getString(1, 4,
-		// System.getProperty("user.dir")+constants.Constance.TESTDATAFILE,
-		// "testSheet");
-		// String actualMessage=PageUtility.getElementText(message);
-		// System.out.println(actualMessage);
-//		PageUtility.isElementDisplayed(clientLabel);
-		// Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
+		WaitUtility.waitElement(driver, addIcon);
+		page.clickonElement(addIcon);
+		page.clickonElement(addClient);
+
 	}
 
+	@SuppressWarnings("static-access")
 	public void verifyNavigatetoAddReperation() throws IOException {
-		PageUtility.clickonElement(addIcon);
-		//WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='fa fa-list-alt icon']"));
-		PageUtility.clickonElement(addReperation);
-		// String expectedMessage=ExcelUtility.getString(1, 5,
-		// System.getProperty("user.dir")+constants.Constance.TESTDATAFILE,
-		// "testSheet");
-		// String actualMessage=PageUtility.getElementText(addRepMsg);
-		// System.out.println(actualMessage);
-//		PageUtility.isElementDisplayed(label);
-		// Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
+		WaitUtility.waitElement(driver, addIcon);
+		page.clickonElement(addIcon);
+		page.clickonElement(addReperation);
+
 	}
 
+	@SuppressWarnings("static-access")
 	public void verifyNavigatetoSendSms() throws IOException {
-		PageUtility.clickonElement(addIcon);
-		PageUtility.clickonElement(sendSms);
-		//String expectedMessage = ExcelUtility.getString(1, 6,System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
-		//String actualMessage = PageUtility.getElementText(sendSMSMsg);
-		//Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
+		WaitUtility.waitElement(driver, addIcon);
+		page.clickonElement(addIcon);
+		page.clickonElement(sendSms);
+
 	}
 
+	@SuppressWarnings("static-access")
 	public void verifyNavigatetoSendEmail() throws IOException {
-		PageUtility.clickonElement(addIcon);
-		PageUtility.clickonElement(sendEmail);
-		//String expectedMessage = ExcelUtility.getString(1, 7,System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
-		//String actualMessage = PageUtility.getElementText(sendEmailMsg);
-//		System.out.println(actualMessage);
-//		Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
+		WaitUtility.waitElement(driver, addIcon);
+		page.clickonElement(addIcon);
+		page.clickonElement(sendEmail);
+
 	}
 
-//	public void verifyNavigatetoQuantityAlert() throws IOException {
-//		PageUtility.clickonElement(QAlertsIcon);
-//		PageUtility.clickonElement(QAlertsIconNum);
-//		String expectedMessage = ExcelUtility.getString(1, 8,
-//				System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
-//		String actualMessage = PageUtility.getElementText(QMsg);
-//		Assert.assertEquals(actualMessage, expectedMessage, "Test Failed");
-//	}
+	@SuppressWarnings("static-access")
+	public void verifyNavigatetoQuantityAlert() throws IOException {
+		WaitUtility.waitElement(driver, QAlertsIcon);
+		page.clickonElement(QAlertsIcon);
+		page.clickonElement(QAlertsIconNum);
+
+	}
 
 }

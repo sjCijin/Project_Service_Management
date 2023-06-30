@@ -18,15 +18,17 @@ public class HomePageTest extends Base {
 		loginpage=new Login(driver);
 		loginpage.enterUserName("admin@admin");
 		loginpage.enterPassword("password");
+		loginpage.clickLoginButton();
+	
 		homepage.verifyNavigatetoClientPage();
 	}
 	@Test
 	public void addReparation() throws IOException {
-		
+		homepage=new HomePage(driver);
 		loginpage=new Login(driver);
 		loginpage.enterUserName("admin@admin");
 		loginpage.enterPassword("password");
-		homepage=new HomePage(driver);
+		loginpage.clickLoginButton();
 		homepage.verifyNavigatetoAddReperation();
 	}
 	@Test
@@ -35,6 +37,7 @@ public class HomePageTest extends Base {
 		loginpage=new Login(driver);
 		loginpage.enterUserName("admin@admin");
 		loginpage.enterPassword("password");
+		loginpage.clickLoginButton();
 		homepage.verifyNavigatetoSendSms();
 	}
 	@Test
@@ -43,15 +46,18 @@ public class HomePageTest extends Base {
 		loginpage=new Login(driver);
 		loginpage.enterUserName("admin@admin");
 		loginpage.enterPassword("password");
+		loginpage.clickLoginButton();
 		homepage.verifyNavigatetoSendEmail();
+	} 
+	@Test
+	public void quantityAlerts() throws IOException {
+		homepage=new HomePage(driver);
+		loginpage=new Login(driver);
+		loginpage.enterUserName("admin@admin");
+		loginpage.enterPassword("password");
+		loginpage.clickLoginButton();		
+		homepage.verifyNavigatetoSendSms();
 	}
-//	@Test
-//	public void quantityAlerts() throws IOException {
-//		homepage=new HomePage(driver);
-//		loginpage=new Login(driver);
-//		loginpage.validLogin();
-//		homepage.verifyNavigatetoSendSms();
-//	}
 
 
 	

@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="servicemanagementproject.Listeners"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.LoginTest">
+      <class name="testscript.HomePageTest">
         <methods>
-          <include name="verifyUserIsAbleToLoginWithValidCredentials"/>
           <include name="browserQuit"/>
           <include name="intializedBrowser"/>
+          <include name="addClient"/>
+          <include name="sendSms"/>
+          <include name="addReparation"/>
+          <include name="sendEmail"/>
+          <include name="quantityAlerts"/>
         </methods>
-      </class> <!-- testscript.LoginTest -->
+      </class> <!-- testscript.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
