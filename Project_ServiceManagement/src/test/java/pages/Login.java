@@ -40,8 +40,9 @@ public class Login {
 	
 	public void clickLoginButton()
 	{
-		 PageUtility.clickonElement(loginButton);
-		 WaitUtility.waitForElementClickable(driver, loginButton);
+		WaitUtility.waitForElementClickable(driver, loginButton); 
+		PageUtility.clickonElement(loginButton);
+		
 	}
 	public String getAlertMessage()
 	{
