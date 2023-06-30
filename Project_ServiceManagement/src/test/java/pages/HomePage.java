@@ -46,45 +46,73 @@ public class HomePage {
 	WebElement QAlertsIcon;
 	@FindBy(xpath = "//span[@class='label label-danger pull-right']")
 	WebElement QAlertsIconNum;
+	@FindBy(xpath = "//h1[text()='Quantity Alerts']")
+	WebElement QAlertsMsg;
+	
 
 	@SuppressWarnings("static-access")
 	public void verifyNavigatetoClientPage() throws IOException {
 		WaitUtility.waitElement(driver, addIcon);
 		page.clickonElement(addIcon);
+		WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='fa fa-user-plus icon']"));
 		page.clickonElement(addClient);
 
+	}
+	public String ClientPageMsg()
+	{
+		return page.getElementText(message);
 	}
 
 	@SuppressWarnings("static-access")
 	public void verifyNavigatetoAddReperation() throws IOException {
 		WaitUtility.waitElement(driver, addIcon);
 		page.clickonElement(addIcon);
+		WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='fa fa-list-alt icon']"));
 		page.clickonElement(addReperation);
 
+	}
+	public String addReperationMsg()
+	{
+		return page.getElementText(addRepMsg);
 	}
 
 	@SuppressWarnings("static-access")
 	public void verifyNavigatetoSendSms() throws IOException {
 		WaitUtility.waitElement(driver, addIcon);
 		page.clickonElement(addIcon);
+		WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='fa fa-comment icon']"));
 		page.clickonElement(sendSms);
 
+	}
+	public String sendSmsMsg()
+	{
+		return page.getElementText(sendSMSMsg);
 	}
 
 	@SuppressWarnings("static-access")
 	public void verifyNavigatetoSendEmail() throws IOException {
 		WaitUtility.waitElement(driver, addIcon);
 		page.clickonElement(addIcon);
+		WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='fa fa-paper-plane icon']"));
 		page.clickonElement(sendEmail);
 
+	}
+	public String sendEmailMsg()
+	{
+		return page.getElementText(sendEmailMsg);
 	}
 
 	@SuppressWarnings("static-access")
 	public void verifyNavigatetoQuantityAlert() throws IOException {
 		WaitUtility.waitElement(driver, QAlertsIcon);
 		page.clickonElement(QAlertsIcon);
+		WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='label label-danger pull-right']"));
 		page.clickonElement(QAlertsIconNum);
 
+	}
+	public String quantityAlertMsg()
+	{
+		return page.getElementText(QAlertsMsg);
 	}
 
 }

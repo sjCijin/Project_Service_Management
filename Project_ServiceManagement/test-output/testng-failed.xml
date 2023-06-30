@@ -12,10 +12,6 @@
           <include name="browserQuit"/>
           <include name="intializedBrowser"/>
           <include name="addClient"/>
-          <include name="sendSms"/>
-          <include name="addReparation"/>
-          <include name="sendEmail"/>
-          <include name="quantityAlerts"/>
         </methods>
       </class> <!-- testscript.HomePageTest -->
     </classes>

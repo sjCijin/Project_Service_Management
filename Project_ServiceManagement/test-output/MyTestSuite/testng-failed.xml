@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testscript.HomePageTest">
+        <methods>
+          <include name="intializedBrowser"/>
+          <include name="addClient"/>
+          <include name="sendSms"/>
+          <include name="addReparation"/>
+          <include name="sendEmail"/>
+          <include name="quantityAlerts"/>
+        </methods>
+      </class> <!-- testscript.HomePageTest -->
+    </classes>
+  </test> <!-- MyTest(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

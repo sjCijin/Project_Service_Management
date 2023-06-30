@@ -15,7 +15,7 @@ public class LoginTest extends Base {
 
 	Login loginpage;
 	
-	@Test
+	@Test()
 	
 	public void verifyUserIsAbleToLoginWithValidCredentials() throws IOException
 	{
