@@ -58,7 +58,7 @@ public class HomePageTest extends Base {
 		loginpage.enterPassword(ExcelUtility.getString(1, 1, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my"));
 		loginpage.clickLoginButton();
 		homepage.verifyNavigatetoSendEmail();
-		String expected=ExcelUtility.getString(1, 6, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
+		String expected=ExcelUtility.getString(1, 8, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
 		String actual=homepage.sendEmailMsg();
 		Assert.assertEquals(actual, expected);
 	} 
@@ -70,7 +70,7 @@ public class HomePageTest extends Base {
 		loginpage.enterPassword(ExcelUtility.getString(1, 1, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my"));
 		loginpage.clickLoginButton();		
 		homepage.verifyNavigatetoSendSms();
-		String expected=ExcelUtility.getString(1, 6, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
+		String expected=ExcelUtility.getString(1, 9, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
 		String actual=homepage.quantityAlertMsg();
 		Assert.assertEquals(actual, expected);
 	}
