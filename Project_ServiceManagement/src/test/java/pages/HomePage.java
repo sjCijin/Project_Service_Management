@@ -22,32 +22,19 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//p[text()='Logged In Successfully']")
-	WebElement loginMessage;
-	@FindBy(xpath = "//i[@class='fa fa-plus-circle']")
-	WebElement addIcon;
-	@FindBy(xpath = "//span[@class='fa fa-user-plus icon']")
-	WebElement addClient;
-	@FindBy(xpath = "//h4[text()='Add Client']")
-	WebElement message;
-	@FindBy(xpath = "//span[@class='fa fa-list-alt icon']")
-	WebElement addReperation;
-	@FindBy(xpath = "//h4[text()='Add Reparation']")
-	WebElement addRepMsg;
-	@FindBy(xpath = "//span[@class='fa fa-comment icon']")
-	WebElement sendSms;
-	@FindBy(xpath = "//h5[text()='Send SMS']")
-	WebElement sendSMSMsg;
-	@FindBy(xpath = "//span[@class='fa fa-paper-plane icon']")
-	WebElement sendEmail;
-	@FindBy(xpath = "//h5[text()='Send Email']")
-	WebElement sendEmailMsg;
-	@FindBy(xpath = "//i[@class='fa fa-exclamation-triangle']")
-	WebElement QAlertsIcon;
-	@FindBy(xpath = "//span[@class='label label-danger pull-right']")
-	WebElement QAlertsIconNum;
-	@FindBy(xpath = "//h1[text()='Quantity Alerts']")
-	WebElement QAlertsMsg;
+	@FindBy(xpath = "//p[text()='Logged In Successfully']")WebElement loginMessage;
+	@FindBy(xpath = "//i[@class='fa fa-plus-circle']")WebElement addIcon;
+	@FindBy(xpath = "//span[@class='fa fa-user-plus icon']")WebElement addClient;
+	@FindBy(xpath = "//h4[text()='Add Client']")WebElement addClientMsg;
+	@FindBy(xpath = "//span[@class='fa fa-list-alt icon']")WebElement addReperation;
+	@FindBy(xpath = "//h4[text()='Add Reparation']")WebElement addRepMsg;
+	@FindBy(xpath = "//span[@class='fa fa-comment icon']")WebElement sendSms;
+	@FindBy(xpath = "//h5[text()='Send SMS']")WebElement sendSMSMsg;
+	@FindBy(xpath = "//span[@class='fa fa-paper-plane icon']")WebElement sendEmail;
+	@FindBy(xpath = "//h5[text()='Send Email']")WebElement sendEmailMsg;
+	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/ul/li[1]")WebElement QAlertsIcon;
+	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/ul/li[1]/ul/li/a")WebElement QAlertsIconNum;
+	@FindBy(xpath = "//*[@id=\"content-wrapper\"]/section[1]/h1")WebElement QAlertsMsg;
 	
 
 	@SuppressWarnings("static-access")
@@ -58,9 +45,9 @@ public class HomePage {
 		page.clickonElement(addClient);
 
 	}
-	public String ClientPageMsg()
+	public String clientPageMsg()
 	{
-		return page.getElementText(message);
+		return page.getElementText(addClientMsg);
 	}
 
 	@SuppressWarnings("static-access")
@@ -106,7 +93,7 @@ public class HomePage {
 	public void verifyNavigatetoQuantityAlert() throws IOException {
 		WaitUtility.waitElement(driver, QAlertsIcon);
 		page.clickonElement(QAlertsIcon);
-		WaitUtility.presenceOfElementLocated(driver, By.xpath("//span[@class='label label-danger pull-right']"));
+		WaitUtility.presenceOfElementLocated(driver, By.xpath("/html/body/div[2]/div/header/nav/div/ul/li[1]/ul/li/a"));
 		page.clickonElement(QAlertsIconNum);
 
 	}
