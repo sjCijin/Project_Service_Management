@@ -19,14 +19,9 @@ public class Login {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@name='identity']")
-	WebElement userName;
-	@FindBy(xpath = "//input[@name='password']")
-	WebElement passWord;
+	@FindBy(xpath = "//input[@name='identity']")WebElement userName;
+	@FindBy(xpath = "//input[@name='password']")WebElement passWord;
 	@FindBy(xpath = "//input[@name='submit']")WebElement loginButton;
-	// @FindBy(name="remember")WebElement remeberMeCheckBox;
-	// @FindBy(linkText="Forgot your password?")WebElement forgotPasswordLink;
-	// @FindBy(linkText="Back to home page")WebElement backToHomePageLink;
 	@FindBy(xpath="//div[@class='alert alert-success']//child::p")WebElement alertMessage;
 
 	public void enterUserName(String user)
