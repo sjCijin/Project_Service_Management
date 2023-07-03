@@ -1,19 +1,20 @@
 package pages;
 
-import java.io.IOException;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
-import utilities.ExcelUtility;
 import utilities.PageUtility;
-import utilities.WaitUtility;
+
+
+
 
 public class Logout {
 public WebDriver driver;
+PageUtility page=new PageUtility();
 	
 	public Logout(WebDriver driver) {
 	this.driver=driver;
@@ -27,14 +28,17 @@ public WebDriver driver;
 	@FindBy(xpath="//a[text()='Sign out']")WebElement signOut;
 	@FindBy(xpath="//p[text()='Logged Out Successfully']")WebElement logoutMsg;
 	
-	public void logOut() throws IOException {
-		
-		PageUtility.clickonElement(name);
-		WaitUtility.waitForElementClickable(driver, name);
-		PageUtility.clickonElement(signOut);
-		//PageUtility.isElementDisplayed(button);
-		//String expectedMessage=ExcelUtility.getString(1, 3, System.getProperty("user.dir")+constance.Constance.TESTDATAFILE, "my");
-		//String actualMessage=PageUtility.getElementText(logoutMsg);
-		//Assert.assertEquals(actualMessage, expectedMessage,"Logout Failed");
+	@SuppressWarnings("static-access")
+	public void clickOnName() throws InterruptedException{
+		page.wait(3000);
+		page.clickonElement(name);
+	}
+	@SuppressWarnings("static-access")
+	public void clickOnSignoutButton(){
+		page.clickonElement(signOut);
+	}
+	public String logoutMessage()
+	{
+		return page.getElementText(logoutMsg);
 	}
 }

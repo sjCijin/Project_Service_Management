@@ -21,7 +21,7 @@
 
 			<!--<class name="testscripts.HomePageTest"></class>-->
 
-			<class name="testscript.AddEmailTest" />
+			<class name="testscript.LogoutTest" />
 
 			<!--<class name="com.qa.testscripts.QuantityAlertTest"></class>-->
 
