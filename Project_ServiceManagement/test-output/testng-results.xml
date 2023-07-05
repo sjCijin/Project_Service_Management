@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-03T13:25:37Z" name="MyTestSuite" finished-at="2023-07-03T13:26:27Z" duration-ms="49686">
+  <suite started-at="2023-07-05T11:22:36Z" name="MyTestSuite" finished-at="2023-07-05T11:23:07Z" duration-ms="30830">
     <groups>
       <group name="Sanity">
-        <method signature="HomePageTest.verifyToClickaddClient()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" name="verifyToClickaddClient" class="testscript.HomePageTest"/>
-        <method signature="HomePageTest.verifyToClickquantityAlerts()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" name="verifyToClickquantityAlerts" class="testscript.HomePageTest"/>
-        <method signature="HomePageTest.verifyToClicksendSms()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" name="verifyToClicksendSms" class="testscript.HomePageTest"/>
+        <method signature="HomePageTest.verifyToClickaddClient()[pri:0, instance:testscript.HomePageTest@590c73d3]" name="verifyToClickaddClient" class="testscript.HomePageTest"/>
+        <method signature="HomePageTest.verifyToClickquantityAlerts()[pri:0, instance:testscript.HomePageTest@590c73d3]" name="verifyToClickquantityAlerts" class="testscript.HomePageTest"/>
+        <method signature="HomePageTest.verifyToClicksendSms()[pri:0, instance:testscript.HomePageTest@590c73d3]" name="verifyToClicksendSms" class="testscript.HomePageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="HomePageTest.verifyToClickaddReparation()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" name="verifyToClickaddReparation" class="testscript.HomePageTest"/>
-        <method signature="HomePageTest.verifyToClicksendEmail()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" name="verifyToClicksendEmail" class="testscript.HomePageTest"/>
+        <method signature="HomePageTest.verifyToClickaddReparation()[pri:0, instance:testscript.HomePageTest@590c73d3]" name="verifyToClickaddReparation" class="testscript.HomePageTest"/>
+        <method signature="HomePageTest.verifyToClicksendEmail()[pri:0, instance:testscript.HomePageTest@590c73d3]" name="verifyToClicksendEmail" class="testscript.HomePageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-07-03T13:25:37Z" name="MyTest" finished-at="2023-07-03T13:26:27Z" duration-ms="49686">
+    <test started-at="2023-07-05T11:22:36Z" name="MyTest" finished-at="2023-07-05T11:23:07Z" duration-ms="30830">
       <class name="testscript.HomePageTest">
-        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:37Z" name="intializedBrowser" finished-at="2023-07-03T13:25:42Z" duration-ms="4983" status="PASS">
+        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:36Z" name="intializedBrowser" finished-at="2023-07-05T11:22:40Z" duration-ms="3326" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,52 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializedBrowser -->
-        <test-method signature="verifyToClickaddClient()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:42Z" name="verifyToClickaddClient" finished-at="2023-07-03T13:25:45Z" duration-ms="3036" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Add Client] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Add Client] but found []
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at testscript.HomePageTest.verifyToClickaddClient(HomePageTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyToClickaddClient()[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:40Z" name="verifyToClickaddClient" finished-at="2023-07-05T11:22:42Z" duration-ms="2416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToClickaddClient -->
-        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:45Z" name="intializedBrowser" finished-at="2023-07-03T13:25:49Z" duration-ms="3309" status="PASS">
+        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:42Z" name="intializedBrowser" finished-at="2023-07-05T11:22:45Z" duration-ms="2710" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,52 +42,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializedBrowser -->
-        <test-method signature="verifyToClickaddReparation()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:49Z" name="verifyToClickaddReparation" finished-at="2023-07-03T13:25:52Z" duration-ms="2978" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Add Reparation] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Add Reparation] but found []
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at testscript.HomePageTest.verifyToClickaddReparation(HomePageTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyToClickaddReparation()[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:45Z" name="verifyToClickaddReparation" finished-at="2023-07-05T11:22:47Z" duration-ms="2281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToClickaddReparation -->
-        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:52Z" name="intializedBrowser" finished-at="2023-07-03T13:25:55Z" duration-ms="3741" status="PASS">
+        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:47Z" name="intializedBrowser" finished-at="2023-07-05T11:22:51Z" duration-ms="3526" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,52 +57,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializedBrowser -->
-        <test-method signature="verifyToClickquantityAlerts()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:55Z" name="verifyToClickquantityAlerts" finished-at="2023-07-03T13:25:58Z" duration-ms="2533" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Quantity Alerts] but found [Home]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Quantity Alerts] but found [Home]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at testscript.HomePageTest.verifyToClickquantityAlerts(HomePageTest.java:75)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyToClickquantityAlerts()[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:51Z" name="verifyToClickquantityAlerts" finished-at="2023-07-05T11:22:53Z" duration-ms="2185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToClickquantityAlerts -->
-        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:25:58Z" name="intializedBrowser" finished-at="2023-07-03T13:26:19Z" duration-ms="20572" status="PASS">
+        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:53Z" name="intializedBrowser" finished-at="2023-07-05T11:22:56Z" duration-ms="2781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,11 +72,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializedBrowser -->
-        <test-method signature="verifyToClicksendEmail()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:26:19Z" name="verifyToClicksendEmail" finished-at="2023-07-03T13:26:21Z" duration-ms="2794" status="PASS">
+        <test-method signature="verifyToClicksendEmail()[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:56Z" name="verifyToClicksendEmail" finished-at="2023-07-05T11:22:58Z" duration-ms="2815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToClicksendEmail -->
-        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:26:21Z" name="intializedBrowser" finished-at="2023-07-03T13:26:25Z" duration-ms="3381" status="PASS">
+        <test-method is-config="true" signature="intializedBrowser(java.lang.String)[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:22:58Z" name="intializedBrowser" finished-at="2023-07-05T11:23:04Z" duration-ms="5629" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializedBrowser -->
-        <test-method signature="verifyToClicksendSms()[pri:0, instance:testscript.HomePageTest@7c8c9a05]" started-at="2023-07-03T13:26:25Z" name="verifyToClicksendSms" finished-at="2023-07-03T13:26:27Z" duration-ms="2313" status="PASS">
+        <test-method signature="verifyToClicksendSms()[pri:0, instance:testscript.HomePageTest@590c73d3]" started-at="2023-07-05T11:23:04Z" name="verifyToClicksendSms" finished-at="2023-07-05T11:23:07Z" duration-ms="3132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToClicksendSms -->

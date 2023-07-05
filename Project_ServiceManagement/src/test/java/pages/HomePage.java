@@ -32,9 +32,9 @@ public class HomePage {
 	@FindBy(xpath = "//h5[text()='Send SMS']")WebElement sendSMSMsg;
 	@FindBy(xpath = "//span[@class='fa fa-paper-plane icon']")WebElement sendEmail;
 	@FindBy(xpath = "//h5[text()='Send Email']")WebElement sendEmailMsg;
-	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/ul/li[1]")WebElement QAlertsIcon;
-	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/ul/li[1]/ul/li/a")WebElement QAlertsIconNum;
-	@FindBy(xpath = "//*[@id=\"content-wrapper\"]/section[1]/h1")WebElement QAlertsMsg;
+	@FindBy(xpath = "//i[@class='fa fa-exclamation-triangle']")WebElement QAlertsIcon;
+	@FindBy(xpath = "//span[@class='label label-danger pull-right']")WebElement QAlertsIconNum;
+	@FindBy(xpath = "//h1[text()='Quantity Alerts']")WebElement QAlertsMsg;
 	
 
 	@SuppressWarnings("static-access")
@@ -96,12 +96,13 @@ public class HomePage {
 	public void verifyNavigatetoQuantityAlert() throws IOException {
 		WaitUtility.waitElement(driver, QAlertsIcon);
 		page.clickonElement(QAlertsIcon);
-		WaitUtility.presenceOfElementLocated(driver, By.xpath("/html/body/div[2]/div/header/nav/div/ul/li[1]/ul/li/a"));
+		WaitUtility.waitElement(driver, QAlertsIconNum);
 		page.clickonElement(QAlertsIconNum);
 
 	}
 	public String quantityAlertMsg()
 	{
+		WaitUtility.waitElement(driver, QAlertsMsg);
 		return page.getElementText(QAlertsMsg);
 	}
 

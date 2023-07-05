@@ -47,6 +47,10 @@ public class AddEmail {
 	{
 		page.clickonElement(close);
 	}
+	public void labelOfSendmail()
+	{
+		
+	}
 	
 	
 

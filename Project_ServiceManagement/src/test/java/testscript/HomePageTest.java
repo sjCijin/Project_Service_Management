@@ -69,7 +69,7 @@ public class HomePageTest extends Base {
 		loginpage.enterUserName(ExcelUtility.getString(1, 0, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my"));
 		loginpage.enterPassword(ExcelUtility.getString(1, 1, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my"));
 		loginpage.clickLoginButton();		
-		homepage.verifyNavigatetoSendSms();
+		homepage.verifyNavigatetoQuantityAlert();
 		String expected=ExcelUtility.getString(1, 8, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my");
 		String actual=homepage.quantityAlertMsg();
 		Assert.assertEquals(actual, expected);

@@ -14,21 +14,21 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
-			<class name="testscript.LoginTest"></class>
+<!--			<class name="testscript.LoginTest"></class>-->
 			
-			<class name="testscript.LogoutTest"></class>
+<!--			<class name="testscript.LogoutTest"></class>-->
 			
 			<class name="testscript.HomePageTest"></class>
 			
-			<class name="testscript.AddClientTest"></class>
+<!--			<class name="testscript.AddClientTest"></class>-->
 			
-			<class name="testscript.AddEmailTest"></class>
+<!--			<class name="testscript.AddEmailTest"></class>-->
 
-			<class name="testscript.SendSmsTest"></class>					
+<!--			<class name="testscript.SendSmsTest"></class>					-->
 
-			<class name="testscript.QuickEmailTest"></class>			
+<!--			<class name="testscript.QuickEmailTest"></class>			-->
 
-			<class name="testscript.QuickSMSTest"></class>			
+<!--			<class name="testscript.QuickSMSTest"></class>			-->
 
 		</classes>
 

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="servicemanagementproject.Listeners"/>
+  </listeners>
   <test thread-count="5" name="MyTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <groups>
@@ -14,8 +17,6 @@
         <methods>
           <include name="verifyToClickquantityAlerts"/>
           <include name="intializedBrowser"/>
-          <include name="verifyToClickaddReparation"/>
-          <include name="verifyToClickaddClient"/>
         </methods>
       </class> <!-- testscript.HomePageTest -->
     </classes>

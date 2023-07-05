@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MyTestSuite" class="navigator-link">
-              <span class="suite-name border-failed">MyTestSuite</span>
+              <span class="suite-name border-passed">MyTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,31 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods failed suite-MyTestSuite"> (hide)</a> <!-- hide-methods failed suite-MyTestSuite -->
-                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods failed suite-MyTestSuite"> (show)</a> <!-- show-methods failed suite-MyTestSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-MyTestSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClickaddClient">verifyToClickaddClient</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClickaddReparation">verifyToClickaddReparation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClickquantityAlerts">verifyToClickquantityAlerts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MyTestSuite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,6 +100,21 @@
                       <a href="#" panel-name="suite-MyTestSuite" class="show-methods passed suite-MyTestSuite"> (show)</a> <!-- show-methods passed suite-MyTestSuite -->
                     </span>
                     <div class="method-list-content passed suite-MyTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClickaddClient">verifyToClickaddClient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClickaddReparation">verifyToClickaddReparation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClickquantityAlerts">verifyToClickquantityAlerts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyTestSuite" title="testscript.HomePageTest" class="method navigator-link" hash-for-method="verifyToClicksendEmail">verifyToClicksendEmail</a> <!-- method navigator-link -->
@@ -146,9 +137,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyTestSuite" class="panel MyTestSuite">
-          <div class="suite-MyTestSuite-class-failed">
+          <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testscript.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -157,10 +148,6 @@
                   <a name="verifyToClickaddClient">
                   </a> <!-- verifyToClickaddClient -->
                   <span class="method-name">verifyToClickaddClient</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Add Client] but found []
-	at testscript.HomePageTest.verifyToClickaddClient(HomePageTest.java:27)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -168,10 +155,6 @@
                   <a name="verifyToClickaddReparation">
                   </a> <!-- verifyToClickaddReparation -->
                   <span class="method-name">verifyToClickaddReparation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Add Reparation] but found []
-	at testscript.HomePageTest.verifyToClickaddReparation(HomePageTest.java:39)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -179,20 +162,8 @@
                   <a name="verifyToClickquantityAlerts">
                   </a> <!-- verifyToClickquantityAlerts -->
                   <span class="method-name">verifyToClickquantityAlerts</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Quantity Alerts] but found [Home]
-	at testscript.HomePageTest.verifyToClickquantityAlerts(HomePageTest.java:75)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MyTestSuite-class-failed -->
-          <div class="suite-MyTestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="verifyToClicksendEmail">
@@ -219,6 +190,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;MyTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;servicemanagementproject.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;MyTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;groups&gt;
@@ -298,30 +272,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyToClickaddClient')
+data.setCell(0, 1, 'verifyToClicksendSms')
 data.setCell(0, 2, 'testscript.HomePageTest')
-data.setCell(0, 3, 3036);
+data.setCell(0, 3, 3132);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyToClickaddReparation')
+data.setCell(1, 1, 'verifyToClicksendEmail')
 data.setCell(1, 2, 'testscript.HomePageTest')
-data.setCell(1, 3, 2978);
+data.setCell(1, 3, 2815);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyToClicksendEmail')
+data.setCell(2, 1, 'verifyToClickaddClient')
 data.setCell(2, 2, 'testscript.HomePageTest')
-data.setCell(2, 3, 2794);
+data.setCell(2, 3, 2416);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyToClickquantityAlerts')
+data.setCell(3, 1, 'verifyToClickaddReparation')
 data.setCell(3, 2, 'testscript.HomePageTest')
-data.setCell(3, 3, 2533);
+data.setCell(3, 3, 2281);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyToClicksendSms')
+data.setCell(4, 1, 'verifyToClickquantityAlerts')
 data.setCell(4, 2, 'testscript.HomePageTest')
-data.setCell(4, 3, 2313);
+data.setCell(4, 3, 2185);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-MyTestSuite">
               </div> <!-- times-div-MyTestSuite -->
             </div> <!-- times-div -->
@@ -353,46 +327,40 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyToClickaddClient</span>
-                <span class="method-start">4983 ms</span>
+                <span class="method-start">3326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">intializedBrowser(Chrome)</span>
-                <span class="method-start">8027 ms</span>
+                <span class="method-start">5746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyToClickaddReparation</span>
-                <span class="method-start">11337 ms</span>
+                <span class="method-start">8456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">intializedBrowser(Chrome)</span>
-                <span class="method-start">14319 ms</span>
+                <span class="method-start">10739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyToClickquantityAlerts</span>
-                <span class="method-start">18060 ms</span>
+                <span class="method-start">14265 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">intializedBrowser(Chrome)</span>
-                <span class="method-start">20599 ms</span>
+                <span class="method-start">16452 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyToClicksendEmail</span>
-                <span class="method-start">41171 ms</span>
+                <span class="method-start">19234 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">intializedBrowser(Chrome)</span>
-                <span class="method-start">43968 ms</span>
+                <span class="method-start">22050 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyToClicksendSms</span>
-                <span class="method-start">47349 ms</span>
+                <span class="method-start">27679 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

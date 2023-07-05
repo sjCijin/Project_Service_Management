@@ -40,6 +40,7 @@ PageUtility page=new PageUtility();
 	}
 	public String logoutMessage()
 	{
+		WaitUtility.waitElement(driver, logoutMsg);
 		return page.getElementText(logoutMsg);
 	}
 }
