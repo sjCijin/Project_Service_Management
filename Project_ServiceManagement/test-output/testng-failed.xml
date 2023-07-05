@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="servicemanagementproject.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="testscript.HomePageTest">
         <methods>
-          <include name="browserQuit"/>
+          <include name="verifyToClickquantityAlerts"/>
           <include name="intializedBrowser"/>
-          <include name="addClient"/>
+          <include name="verifyToClickaddReparation"/>
+          <include name="verifyToClickaddClient"/>
         </methods>
       </class> <!-- testscript.HomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- MyTest(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class QuickEmail {
 	public WebDriver driver;
@@ -21,7 +22,7 @@ public class QuickEmail {
 	@FindBy(xpath="//*[@id=\"subject_\"]")WebElement subject;
 	@FindBy(xpath="//*[@id=\"body_\"]")WebElement textfield;
 	@FindBy(xpath="//*[@id=\"content-wrapper\"]/section[2]/section/div[2]/section[2]/div[2]/div[3]/button")WebElement sendButton;
-	//@FindBy(xpath="")WebElement a;
+	@FindBy(xpath="//h3[text()='Quick Email']")WebElement sendEmailHead;
 	public void senToField(String mail_to)
 	{
 		page.enterText(mailTo, mail_to);		
@@ -38,5 +39,10 @@ public class QuickEmail {
 	public void sendButton()
 	{
 		page.clickonElement(sendButton);
-	}	
+	}
+	public String quickEmailHead()
+	{
+		WaitUtility.waitElement(driver, sendEmailHead);
+		return page.getElementText(sendEmailHead);
+	}
 }

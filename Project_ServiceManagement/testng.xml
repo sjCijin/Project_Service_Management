@@ -14,26 +14,21 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
+			<class name="testscript.LoginTest"></class>
+			
+			<class name="testscript.LogoutTest"></class>
+			
+			<class name="testscript.HomePageTest"></class>
+			
+			<class name="testscript.AddClientTest"></class>
+			
+			<class name="testscript.AddEmailTest"></class>
 
-			<!--<class name="com.qa.testscripts.SendSMSTest"></class>-->
+			<class name="testscript.SendSmsTest"></class>					
 
-			<!--<class name="com.qa.testscripts.AddClientTest"></class>-->
+			<class name="testscript.QuickEmailTest"></class>			
 
-			<!--<class name="testscripts.HomePageTest"></class>-->
-
-			<class name="testscript.LogoutTest" />
-
-			<!--<class name="com.qa.testscripts.QuantityAlertTest"></class>-->
-
-			<!--<class name="com.qa.testscripts.SendEmailTest"></class>-->
-
-			<!--<class name="com.qa.testscripts.LogoutTest"></class>-->
-
-			<!--<class name="com.qa.testscripts.OredrAndReparationPageTest"></class>-->
-
-			<!--<class name="com.qa.testscripts.QuickSMSTest"></class>-->
-
-			<!--<class name="com.qa.testscripts.ForgotYourPwTest"></class>-->
+			<class name="testscript.QuickSMSTest"></class>			
 
 		</classes>
 

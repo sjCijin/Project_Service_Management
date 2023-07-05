@@ -14,7 +14,7 @@ public class LogoutTest extends Base {
 	Login loginpage;
 	Logout logoutpage;
 	@Test
-	public void checkLogout() throws IOException, InterruptedException {
+	public void checkLogout() throws IOException{
 		loginpage=new Login(driver);
 		loginpage.enterUserName(ExcelUtility.getString(1, 0, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my"));
 		loginpage.enterPassword(ExcelUtility.getString(1, 1, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "my"));

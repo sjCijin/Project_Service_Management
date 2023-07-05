@@ -12,12 +12,10 @@
     <classes>
       <class name="testscript.HomePageTest">
         <methods>
+          <include name="verifyToClickquantityAlerts"/>
           <include name="intializedBrowser"/>
-          <include name="addClient"/>
-          <include name="sendSms"/>
-          <include name="addReparation"/>
-          <include name="sendEmail"/>
-          <include name="quantityAlerts"/>
+          <include name="verifyToClickaddReparation"/>
+          <include name="verifyToClickaddClient"/>
         </methods>
       </class> <!-- testscript.HomePageTest -->
     </classes>

@@ -2,6 +2,7 @@ package testscript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -29,6 +30,10 @@ public class QuickEmailTest extends Base{
 		quickE.subjectField(ExcelUtility.getString(1, 1, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "quickemail"));
 		quickE.mailField(ExcelUtility.getString(1, 2, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "quickemail"));
 		quickE.sendButton();
+		String actual=ExcelUtility.getString(1, 3, System.getProperty("user.dir") + constance.Constance.TESTDATAFILE, "quickemail");
+		String expected=quickE.quickEmailHead();
+		Assert.assertEquals(actual, expected);
+		
 	}
 
 }

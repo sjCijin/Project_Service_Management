@@ -47,6 +47,7 @@ public class HomePage {
 	}
 	public String clientPageMsg()
 	{
+		WaitUtility.waitElement(driver, addClientMsg);
 		return page.getElementText(addClientMsg);
 	}
 
@@ -60,6 +61,7 @@ public class HomePage {
 	}
 	public String addReperationMsg()
 	{
+		WaitUtility.waitElement(driver, addRepMsg);
 		return page.getElementText(addRepMsg);
 	}
 
@@ -86,6 +88,7 @@ public class HomePage {
 	}
 	public String sendEmailMsg()
 	{
+		WaitUtility.waitElement(driver, sendEmailMsg);
 		return page.getElementText(sendEmailMsg);
 	}
 
